@@ -18,7 +18,11 @@ class Solution:
     def generateParentheses(self, n):
         DP = [["("]]
 
-        for i in range(3 * 2 - 1):
+        # Why n*2? -> if n = 3, there will be n*2=6 total parentesis in a valid combination. Ex. ((())), ()()()
+        # Why n-1? -> The first parent "(" is already added in DP. So if n = 3, we only need to add 5 more parentesis. Ex. ( -> ()()(), ( -> ((()))
+        parenthesesToAdd = n * 2 - 1
+
+        for i in range(parenthesesToAdd):
             DP.append([])
             for paren in ["(", ")"]:
                 for combination in DP[i]:
