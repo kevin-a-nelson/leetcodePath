@@ -1,0 +1,55 @@
+
+--- Assigning --- 
+Pre:    {'val': 0, 'next': None}
+Head:   {'val': 1, 'next': 2}
+Nxt:    {'val': 2, 'next': 3}
+Nodes:  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+--- Next Assigning --- 
+Pre:    {'val': 0, 'next': 2}
+Head:   {'val': 1, 'next': 3}
+Nxt:    {'val': 2, 'next': 1}
+Nodes:  [2, 1, 3, 4, 5, 6, 7, 8, 9, 10]
+
+--- Assigning --- 
+Pre:    {'val': 1, 'next': 3}
+Head:   {'val': 3, 'next': 4}
+Nxt:    {'val': 4, 'next': 5}
+Nodes:  [2, 1, 3, 4, 5, 6, 7, 8, 9, 10]
+--- Next Assigning --- 
+Pre:    {'val': 1, 'next': 4}
+Head:   {'val': 3, 'next': 5}
+Nxt:    {'val': 4, 'next': 3}
+Nodes:  [2, 1, 4, 3, 5, 6, 7, 8, 9, 10]
+
+--- Assigning --- 
+Pre:    {'val': 3, 'next': 5}
+Head:   {'val': 5, 'next': 6}
+Nxt:    {'val': 6, 'next': 7}
+Nodes:  [2, 1, 4, 3, 5, 6, 7, 8, 9, 10]
+--- Next Assigning --- 
+Pre:    {'val': 3, 'next': 6}
+Head:   {'val': 5, 'next': 7}
+Nxt:    {'val': 6, 'next': 5}
+Nodes:  [2, 1, 4, 3, 6, 5, 7, 8, 9, 10]
+
+--- Assigning --- 
+Pre:    {'val': 5, 'next': 7}
+Head:   {'val': 7, 'next': 8}
+Nxt:    {'val': 8, 'next': 9}
+Nodes:  [2, 1, 4, 3, 6, 5, 7, 8, 9, 10]
+--- Next Assigning --- 
+Pre:    {'val': 5, 'next': 8}
+Head:   {'val': 7, 'next': 9}
+Nxt:    {'val': 8, 'next': 7}
+Nodes:  [2, 1, 4, 3, 6, 5, 8, 7, 9, 10]
+
+--- Assigning --- 
+Pre:    {'val': 7, 'next': 9}
+Head:   {'val': 9, 'next': 10}
+Nxt:    {'val': 10, 'next': None}
+Nodes:  [2, 1, 4, 3, 6, 5, 8, 7, 9, 10]
+--- Next Assigning --- 
+Pre:    {'val': 7, 'next': 10}
+Head:   {'val': 9, 'next': None}
+Nxt:    {'val': 10, 'next': 9}
+Nodes:  [2, 1, 4, 3, 6, 5, 8, 7, 10, 9]
